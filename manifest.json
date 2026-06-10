@@ -1,0 +1,15 @@
+{
+  "short_name": "DevApp",
+  "name": "My First Responsive App",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1006/1006363.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#1e293b",
+  "display": "standalone",
+  "theme_color": "#2563eb"
+}

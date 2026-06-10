@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <header class="recipe-header">
+        <h1>🍳 Gourmet Cooking Hub</h1>
+    </header>
+
+    <div class="recipe-container">
+        <section class="recipe-intro">
+            <h2>Classic Homemade Pancakes</h2>
+            <p class="description">Fluffy, golden, and perfect for weekend breakfasts.</p>
+            
+            <div class="servings-control">
+                <span>Servings: </span>
+                <button id="btnDecrease">-</button>
+                <span id="servingValue" class="serving-number">2</span>
+                <button id="btnIncrease">+</button>
+            </div>
+        </section>
+
+        <div class="recipe-body">
+            
+            <aside class="ingredients-box">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li><span class="amt" data-base="1">1</span> cup All-Purpose Flour</li>
+                    <li><span class="amt" data-base="2">2</span> tbsp Sugar</li>
+                    <li><span class="amt" data-base="1">1</span> tsp Baking Powder</li>
+                    <li><span class="amt" data-base="0.5">0.5</span> tsp Salt</li>
+                    <li><span class="amt" data-base="1">1</span> large Egg</li>
+                    <li><span class="amt" data-base="0.75">0.75</span> cup Milk</li>
+                    <li><span class="amt" data-base="2">2</span> tbsp Melted Butter</li>
+                </ul>
+            </aside>
+
+            <main class="instructions-box">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>
+                        <h4>Mix Dry Ingredients</h4>
+                        <p>In a large bowl, whisk together the flour, sugar, baking powder, and salt.</p>
+                    </li>
+                    <li>
+                        <h4>Whisk Wet Ingredients</h4>
+                        <p>In a separate bowl, beat the egg, then whisk in the milk and melted butter.</p>
+                    </li>
+                    <li>
+                        <h4>Combine & Batter</h4>
+                        <p>Pour the wet ingredients into the dry ingredients. Mix gently just until combined (it is totally fine if the batter has a few lumps!).</p>
+                    </li>
+                    <li>
+                        <h4>Cook Until Golden</h4>
+                        <p>Heat a lightly oiled skillet over medium heat. Pour batter onto the skillet. Cook until bubbles form on top, then flip and cook until golden brown on both sides.</p>
+                    </li>
+                </ol>
+            </main>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

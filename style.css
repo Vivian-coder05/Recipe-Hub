@@ -1,0 +1,153 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fffbeb; /* Soft warm food-themed background */
+    color: #334155;
+    padding-bottom: 50px;
+}
+
+/* Header */
+.recipe-header {
+    background-color: #ea580c; /* Warm orange */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Main Container Limiters */
+.recipe-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+/* Intro Section */
+.recipe-intro {
+    text-align: center;
+    border-bottom: 2px dashed #fed7aa;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.recipe-intro h2 {
+    font-size: 28px;
+    color: #9a3412;
+}
+
+.description {
+    font-style: italic;
+    color: #64748b;
+    margin-top: 5px;
+}
+
+/* Servings Controls */
+.servings-control {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-weight: bold;
+}
+
+.servings-control button {
+    background-color: #ea580c;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.servings-control button:hover {
+    background-color: #c2410c;
+}
+
+.serving-number {
+    font-size: 20px;
+    background-color: #ffedd5;
+    padding: 4px 16px;
+    border-radius: 8px;
+    color: #ea580c;
+}
+
+/* 🌟 DUAL PANEL FLEXBOX LAYOUT 🌟 */
+.recipe-body {
+    display: flex;
+    flex-direction: row; /* Side-by-side elements on desktop panels */
+    gap: 40px;
+}
+
+/* Ingredients Panel Column */
+.ingredients-box {
+    flex: 1; /* Assign proportional weight */
+    background-color: #fafaf9;
+    padding: 20px;
+    border-radius: 12px;
+    height: fit-content;
+    border-left: 4px solid #ea580c;
+}
+
+.ingredients-box h3, .instructions-box h3 {
+    color: #9a3412;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.ingredients-box ul {
+    list-style-type: none;
+}
+
+.ingredients-box ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e7e5e4;
+}
+
+.amt {
+    font-weight: bold;
+    color: #ea580c;
+}
+
+/* Instructions Panel Column */
+.instructions-box {
+    flex: 2; /* Give instructions twice as much spatial room as ingredients */
+}
+
+.instructions-box ol {
+    padding-left: 20px;
+}
+
+.instructions-box ol li {
+    margin-bottom: 20px;
+}
+
+.instructions-box h4 {
+    color: #1e293b;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.instructions-box p {
+    line-height: 1.6;
+    color: #475569;
+}
+
+/* 📱 RESPONSIVE MEDIA QUERY (For Smart Phones) */
+@media (max-width: 768px) {
+    .recipe-body {
+        flex-direction: column; /* Snap layout instantly to structural stacked rows */
+        gap: 25px;
+    }
+}
